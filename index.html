@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Kittens</title>
+</head>
+<body>
+    <header>
+        <h1 class="logo">КотоМагазин</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#cats">Котики</a></li>
+                <li><a href="#feedback">Обратная связь</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="floating-button" id="floatingBtn">Нажми меня!</div>
+    <main>
+        <section id="home">
+            <h2>Добро пожаловать в КотоМагазин!</h2>
+            <p>Здесь вы можете найти лучших породистых котиков для своего дома.</p>
+        </section>
+        <section id="cats">
+            <article>
+                <h3>Британская короткошерстная</h3>
+                <img src="https://img.freepik.com/premium-photo/british-shorthair-kitten-3-months-old-british-shorthair-kitten-3-months-old-british-shorthair-kitten-3-months-old_191971-5504.jpg" alt="Британская короткошерстная">
+                <p>Прекрасные британские короткошерстные котята ждут вас. Они игривы и дружелюбны.</p>
+                <button>Подробнее</button>
+            </article>
+
+            <article>
+                <h3>Персидская</h3>
+                <img src="https://img.freepik.com/premium-photo/persian-kitten-10-weeks-old-cat-portrait-isolated_191971-1684.jpg" alt="Персидская">
+                <p>Элегантные персидские котята с длинной шерстью. Очаровательные и нежные.</p>
+                <button>Подробнее</button>
+            </article>
+
+            <article>
+                <h3>Сиамская</h3>
+                <img src="https://img.freepik.com/premium-photo/siam-kitten-standing-on-a-white-table_113913-1390.jpg" alt="Сиамская">
+                <p>Прекрасные сиамские котята с уникальной окраской. Очень общительные и ласковые.</p>
+                <button>Подробнее</button>
+            </article>
+            
+            <article>
+                <h3>Шотландская вислоухая</h3>
+                <img src="https://img.freepik.com/premium-photo/scottish-fold-kitten-in-front-of-white-background_87557-27728.jpg" alt="Шотландская вислоухая">
+                <p>Милые шотландские котята с висячими ушками. Очень игривые и любопытные.</p>
+                <button>Подробнее</button>
+            </article>
+            
+            <article>
+                <h3>Мейн-кун</h3>
+                <img src="https://img.freepik.com/premium-photo/maine-coon-kitten-isolated-cute-maine-coon-cat-little-funny-purebred-cat-gray-color_77829-4192.jpg" alt="Мейн-кун">
+                <p>Могучие мейн-куны – настоящие друзья для всей семьи. Умные и ласковые.</p>
+                <button>Подробнее</button>
+            </article>
+        </section>
+        <div class="interactive-card">
+            <img src="https://img.freepik.com/premium-photo/cute-little-cat-kitty-baby-animal_853115-5758.jpg" alt="Котик">
+            <div class="overlay">
+                <h3>Милый котик</h3>
+                <p>Нажми на меня!</p>
+            </div>
+        </div>
+        <section id="feedback">
+            <h2>Обратная связь</h2>
+            <form action="#" method="post">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Сообщение:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <input type="submit" value="Отправить">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p id="contact">Контакты: info@kotomagazin.ru</p>
+    </footer>
+    <script>
+            document.getElementById('floatingBtn').addEventListener('click', function() {
+            alert('Привет! Добро пожаловать к котикам!')
+        })
+
+            document.querySelector('.interactive-card').addEventListener('click', function() {
+            alert('Ты нажал на карточку!')
+        })
+    </script>
+</body>
+</html>
